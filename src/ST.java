@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class ST<Key extends Comparable<Key>, Value> {
-
+//Comment for merge
 	Node first;
 	int count = 0;
 
@@ -39,7 +39,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 
 	Value get(Key key) {
 		if (key == null)
-			return null; // краще кидати Exception
+			return null; // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ Exception
 		Node temp = first;
 		while (temp != null) {
 			if (temp.key.equals(key)) {
@@ -92,7 +92,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 			return count;
 	}
 
-	Key min() {// найменший ключ
+	Key min() {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		Node temp = first;
 		Key minKey = (Key) first.key;
 		while (temp != null) {
@@ -104,7 +104,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 		return minKey;
 	}
 
-	Key max() {// найбільший ключ
+	Key max() {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		Node temp = first;
 		Key maxKey = (Key) first.key;
 		while (temp != null) {
@@ -118,7 +118,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 
 	
 
-	int rank(Key key) {// кількість ключів менших за key
+	int rank(Key key) {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ key
 		int rez  = 0;
 		Node temp = first;
 		//Node min = (Node) min();
@@ -164,7 +164,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 
 	}
 	
-	Key floor(Key key) {//найбільший ключ менший або рівний key
+	Key floor(Key key) {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ key
 	if(key == null){
 		throw new IllegalArgumentException();
 	}
@@ -181,7 +181,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 		return result;
 	}
 	
-	Key ceiling(Key key) {//найменший ключ більший або рівний key
+	Key ceiling(Key key) {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ key
 		if(key == null){
 			throw new IllegalArgumentException();
 		}
@@ -198,7 +198,7 @@ public class ST<Key extends Comparable<Key>, Value> {
 			return result;
 	}
 
-	int size(Key lo, Key hi) {// кількість ключів в [lo..hi]
+	int size(Key lo, Key hi) {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ [lo..hi]
 		int rez = 0;
 		Node temp = first;
 		while(temp!=null){

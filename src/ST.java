@@ -2,6 +2,7 @@ import java.util.Iterator;
 
 public class ST<Key extends Comparable<Key>, Value> {
 //Comment for merge
+    Node second;
 	Node first;
 	int count = 0;
 

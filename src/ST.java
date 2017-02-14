@@ -2,6 +2,8 @@ import java.util.Iterator;
 
 public class ST<Key extends Comparable<Key>, Value> {
 //Comment for merge
+
+//Try to create merge
 	Node first;
 	int count = 0;
 
